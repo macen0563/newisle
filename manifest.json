@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "新屿 NewIsle",
+  "version": "2.20.0",
+  "description": "新屿 NewIsle：本地优先的新标签页工作台——多桌面、毛玻璃组件、多引擎搜索与高清壁纸，无账号、无追踪",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png",
+    "256": "icons/icon-256.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newtab-workbench@fan.dev",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ],
+        "optional": [
+          "locationInfo",
+          "searchTerms"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "geolocation"
+  ],
+  "optional_permissions": [
+    "bookmarks"
+  ]
+}

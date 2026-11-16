@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新屿 NewIsle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="bg"></div>
+  <div id="bgDim"></div>
+  <div id="app">
+    <main id="main">
+      <form id="searchForm" autocomplete="off">
+        <button type="button" id="engineBtn" title="切换搜索引擎">
+          <img id="engineIcon" alt="" width="20" height="20" />
+          <span id="engineName">必应</span>
+          <span class="caret">▾</span>
+        </button>
+        <div id="engineMenu" hidden></div>
+        <input id="searchInput" type="text" placeholder="输入搜索内容" />
+        <button type="submit" id="searchGo">搜索</button>
+      </form>
+      <section id="gridWrap">
+        <div id="grid"></div>
+        <div id="iconGrid"></div>
+        <div id="freeLayer" hidden></div>
+      </section>
+      <div id="addMenu" hidden>
+        <button class="add-opt" data-act="icon">图标</button>
+        <button class="add-opt" data-act="folder">文件夹</button>
+        <button class="add-opt" data-act="widget">组件</button>
+        <button class="add-opt" data-act="batch">批量添加</button>
+      </div>
+    </main>
+  </div>
+
+  <div class="top-logo" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="rgba(255,255,255,.85)"><path d="M20.6 3.4c-5.9-.5-11.9 1.7-14.9 7C3.9 14 4.6 18.3 3.4 20.6c2.3-1.2 6.6-.5 10-2.3 5.3-3 7.7-9 7.2-14.9zM6.1 17.9c.4-3.9 3.4-8.2 7.9-10.8-3.4 3.2-6.2 7.3-7.9 10.8z"/></svg>
+  </div>
+
+  <button id="btnAdd" title="添加">+</button>
+
+  <button id="btnSettings" class="gear-fixed" title="设置">⚙</button>
+
+  <div id="folderPop" hidden>
+    <div class="folder-pop-header">
+      <span class="folder-pop-title">文件夹内容</span>
+      <button class="pop-close" data-close-folder>✕</button>
+    </div>
+    <div class="folder-grid"></div>
+  </div>
+
+  <nav id="dotsNav"></nav>
+
+  <div id="modalRoot"></div>
+  <div id="ctxMenu" hidden></div>
+  <div id="toast" hidden></div>
+
+  <script src="layout.js"></script>
+  <script src="i18n.js"></script>
+  <script src="holidays.js"></script>
+  <script src="onthisday.js"></script>
+  <script src="iconlib.js"></script>
+  <script src="core.js"></script>
+  <script src="dialogs.js"></script>
+  <script src="widgets.js"></script>
+  <script src="widgets2.js"></script>
+  <script src="zip.js"></script>
+  <script src="extra.js"></script>
+  <script src="free.js"></script>
+  <script src="dots.js"></script>
+  <script src="plus.js"></script>
+</body>
+</html>
