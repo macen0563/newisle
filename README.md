@@ -9,7 +9,7 @@ A local-first new tab page with multiple desktops, frosted-glass widgets, multi-
 ## 安装 / Install
 
 - **Firefox**：[addons.mozilla.org/firefox/addon/newisle](https://addons.mozilla.org/firefox/addon/newisle/)（审核中，通过后即可一键安装）
-- **Chrome / Edge**：商店上架进行中；也可下载 [Releases](../../releases) 里的 zip，解压后在扩展管理页开启「开发者模式」→「加载已解压的扩展程序」手动安装。
+- **Chrome / Edge**：商店上架进行中；也可下载本仓库 [v2.20.0 标签](../../releases/tag/v2.20.0) 的 Source code (zip)，解压后在扩展管理页开启「开发者模式」→「加载已解压的扩展程序」手动安装（仓库根目录即扩展根目录）。
 
 ## 功能 / Features
 
